@@ -13,21 +13,17 @@ import EmployeeNew from './components/employees/employee-new'
 import CustomerEdit from './components/customers/Customer-Edit'
 import Ticket from './components/ticket/ticket'
 import TicketAdd from './components/ticket/ticket-add'
+import Navigation from './components/navigation' 
+
+import Swal from 'sweetalert2'
 
 function App(props) {
-
-  const handleLogout = ()=>{
-    localStorage.removeItem('authToken')
-    window.location.href='/account/login'
-  }
   return (
     <BrowserRouter>
-        <div>
-          <h1>
-            Ticket Tracker
-          </h1>
-
-          <Link to='/'>Home</Link>
+        <div className='container'>
+          
+          <Navigation/>
+          {/* <Link to='/'>Home</Link>
           {localStorage.getItem('authToken') ? 
             <div>
                   <Link to='/customers'>Customers</Link>
@@ -41,7 +37,7 @@ function App(props) {
               <Link to='/account/register'>Register</Link>
             </div>
           }
-          
+           */}
           
           
           <Switch>

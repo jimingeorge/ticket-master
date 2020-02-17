@@ -27,7 +27,7 @@ class DepartmentForm extends React.Component{
                 <form onSubmit={this.handleSubmit}>
                     <label htmlFor='name'>Department Name:</label>
                     <input type='text' is='name' onChange={this.handleChange} />
-                    <input type='submit' value='Add'/>
+                    <button type='button' onClick={this.handleSubmit} className='btn btn-md btn-secondary'>Add Department</button>
                 </form>
             </div>
         )

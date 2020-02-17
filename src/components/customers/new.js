@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from '../../config/axios'
 import CustomerForm from './form'
+import Swal from 'sweetalert2'
 
 class CustomerNew extends React.Component{
 
@@ -15,9 +16,19 @@ class CustomerNew extends React.Component{
         .then(res=>{
             console.log(res.data);
             if(res.data.errors){
-                alert(res.data.message)
+                console.log(res.data.message)
+                Swal.fire(
+                    'Oops!',
+                    'There was an error in adding customer',
+                    'error'
+                  )
             }else{
                 this.props.history.push('/customers')
+                Swal.fire(
+                    'Customer added to the list',
+                    '',
+                    'success'
+                  )
             }
         })
         .catch(err=>alert(err))

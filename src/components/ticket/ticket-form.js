@@ -78,6 +78,7 @@ class TicketForm extends React.Component{
         //console.log(formData);
         
         this.props.submit(formData)
+        
     }
     handleChange=(e)=>{
         console.log([e.target.name],e.target.value)
@@ -115,16 +116,15 @@ class TicketForm extends React.Component{
         return(
             
             <form onSubmit={this.handleSubmit}>
+                 <div class="form-group">
                 <label htmlFor='code'>Code</label>
                 <br/>
-                <input type='text' name='code' id='code' onChange={this.handleChange} value={this.state.code}/>
-                <br/>
-                <br/>
-
+                <input className="form-control" type='text' name='code' id='code' onChange={this.handleChange} value={this.state.code}/>
+                </div>
+                <div class="form-group">
                 <label htmlFor='customer'>Customer</label>
-                <br/>
-                <br/>
-                <select id='customer' name='customerName' onChange={this.handleChange}>
+                
+                <select className="form-control" id='customer' name='customerName' onChange={this.handleChange}>
                     <option  value="">select</option>
                     {
                         this.state.customers.map(ele=>{
@@ -132,13 +132,11 @@ class TicketForm extends React.Component{
                         })
                     }
                 </select>
-                
-                <br/>
-                <br/>
+                </div>
+                <div class="form-group">
                 <label htmlFor='department'>Department</label>
-                <br/>
-                <br/>
-                <select id='department' name='departmentName' onChange={this.handleEmployee}>
+                
+                <select className="form-control" id='department' name='departmentName' onChange={this.handleEmployee}>
                     <option value="">select</option>
                     {
                         this.state.departments.map(ele=>{
@@ -146,12 +144,11 @@ class TicketForm extends React.Component{
                         })
                     }
                 </select>
-                <br/>
-                <br/>
+                </div>
+                <div class="form-group">
                 <label htmlFor='employee'>Employees</label>
-                <br/>
-                <br/>
-                <select id='employees' name='employeeName' onChange={this.handleChange}>
+                
+                <select className="form-control" id='employees' name='employeeName' onChange={this.handleChange}>
                     <option value="">select</option>
                     {
                        this.state.employeeShow.map(ele=>{
@@ -160,18 +157,19 @@ class TicketForm extends React.Component{
                         
                     }
                 </select>
-                <br/>
-                <br/>
+                </div>
+                <div class="form-group">
                 <label htmlFor='message'>Message</label>
-                <br/>
-                <textarea rows='4' cols='50' name='message' id='message' onChange={this.handleChange}></textarea>
-                <br/>
-                <br/>
-                <label htmlFor='priority' >Priority</label>
-                <br/>
-                <input type="radio" name="priority" value="High" onClick = {this.handleChange}/> High<br/>
-                <input type="radio" name="priority" value="Medium" onClick={this.handleChange}/> Medium<br/>
-                <input type="radio" name="priority" value="Low" onClick ={this.handleChange}/> Low<br/><br/>
+                
+                <textarea className="form-control" rows='4' cols='50' name='message' id='message' onChange={this.handleChange}></textarea>
+                </div>
+                <div class="form-group">
+                <label class="form-check-label" htmlFor='priority' >Priority</label>
+               <br/>
+                <input className='form-check-input' type="radio" name="priority" value="High" onClick = {this.handleChange}/> High<br/>
+                <input className='form-check-input' type="radio" name="priority" value="Medium" onClick={this.handleChange}/> Medium<br/>
+                <input className='form-check-input' type="radio" name="priority" value="Low" onClick ={this.handleChange}/> Low<br/><br/>
+                </div>
                 <input type='submit'/>
             </form>
         )

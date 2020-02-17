@@ -27,7 +27,8 @@ class EmployeeShow extends React.Component{
         return(
             <div>
                 <h1>Employee Show</h1>
-                <p>{this.state.name} - {this.state.email}</p>
+                <li class="list-group-item">{this.state.name} - {this.state.email}</li>
+                <br/>
                 <Link to='/employees'>Back</Link>
             </div>
         )

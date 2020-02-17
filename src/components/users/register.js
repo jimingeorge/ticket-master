@@ -43,16 +43,20 @@ class Register extends React.Component{
             <div>
                 <h1>Register Here</h1>
                 <form onSubmit={this.handleSubmit}>
-                    <label htmlFor='username'>Username:</label>
-                    <input type='text' value={this.state.username} onChange={this.handleChange} name='username' id='username'/>
-
-                    <label htmlFor='email' >Email:</label>
-                    <input type='text' value={this.state.email} onChange={this.handleChange} name='email' id='email'/>
-
-                    <label htmlFor='password'>Password</label>
-                    <input type='password' value={this.state.password} onChange={this.handleChange} name='password' id='password'/>
-
-                    <input type='submit'/>
+                    <div class="form-group">
+                        <label htmlFor='username'>Username:</label>
+                        <input class="form-control" placeholder="Enter Username" type='text' value={this.state.username} onChange={this.handleChange} name='username' id='username'/>
+                    </div>
+                    <div class="form-group">
+                        <label htmlFor='email' >Email:</label>
+                        <input class="form-control" type='text' placeholder="Enter email" value={this.state.email} onChange={this.handleChange} name='email' id='email'/>
+                    </div>
+                    <div class="form-group">
+                        <label htmlFor='password'>Password</label>
+                        <input class="form-control" type='password' value={this.state.password} onChange={this.handleChange} name=
+                    'password' id='password' placeholder="Password"/>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         )

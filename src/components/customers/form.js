@@ -31,16 +31,19 @@ class CustomerForm extends React.Component{
         return(
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <label htmlFor='name' >Name:</label>
-                    <input type='text' onChange={this.handleChange} name='name' id='name' value={this.state.name}/><br/>
-
-                    <label htmlFor='email' >Email:</label>
-                    <input type='text' onChange={this.handleChange} name='email' id='email' value={this.state.email}/><br/>
-
-                    <label htmlFor='mobile' >Mobile:</label>
-                    <input type='number' onChange={this.handleChange} name='mobile' id='mobile' value={this.state.mobile}/><br/>
-
-                    <input type='submit' value='Add'/>
+                    <div className="form-group">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" onChange={this.handleChange} name='name'/>
+                    </div>
+                    <div className="form-group">
+                        <label for="exampleInputPassword1">Email</label>
+                        <input type="email" className="form-control" id="exampleInputPassword1" placeholder="email" onChange={this.handleChange} name='email'/>
+                    </div>
+                    <div className="form-group">
+                        <label for="exampleInputPassword1">Mobile</label>
+                        <input type="number" className="form-control" id="exampleInputPassword1" placeholder="Mobile No" onChange={this.handleChange} name='mobile'/>
+                    </div>
+                    <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
             </div>
         )

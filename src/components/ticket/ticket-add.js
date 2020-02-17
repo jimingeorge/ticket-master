@@ -11,7 +11,7 @@ class TicketAdd extends React.Component{
         })
         .then(res=>{
             console.log(res.data);
-            
+            window.location.href='/tickets'
         })
         .catch(err=>alert(err))
         console.log(formData);
@@ -20,6 +20,7 @@ class TicketAdd extends React.Component{
     render(){
         return(
             <div>
+                <br/>
                 <h1>Add Ticket</h1>
                 <TicketForm submit={this.handleSubmit}/>
             </div>
