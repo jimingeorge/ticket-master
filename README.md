@@ -4,14 +4,14 @@ Ticket Master is a ticket management web application based on React. It allows t
 
 ## `Images`
 
-!alt[Register](https://github.com/jimingeorge/ticket-master/blob/master/public/register.png)
-!alt[Login](https://github.com/jimingeorge/ticket-master/blob/master/public/login.png)
-!alt[Ticket](https://github.com/jimingeorge/ticket-master/blob/master/public/tickets.png)
-!alt[Ticket-Form](https://github.com/jimingeorge/ticket-master/blob/master/public/ticket-form.png)
-!alt[Customer](https://github.com/jimingeorge/ticket-master/blob/master/public/customer-list.png)
-!alt[Customer-Form](https://github.com/jimingeorge/ticket-master/blob/master/public/customer-form.png)
-!alt[Employee](https://github.com/jimingeorge/ticket-master/blob/master/public/emp-list.png)
-!alt[Department](https://github.com/jimingeorge/ticket-master/blob/master/public/dpt-list.png)
+[Register](https://github.com/jimingeorge/ticket-master/blob/master/public/register.png)
+[Login](https://github.com/jimingeorge/ticket-master/blob/master/public/login.png)
+[Ticket](https://github.com/jimingeorge/ticket-master/blob/master/public/tickets.png)
+[Ticket-Form](https://github.com/jimingeorge/ticket-master/blob/master/public/ticket-form.png)
+[Customer](https://github.com/jimingeorge/ticket-master/blob/master/public/customer-list.png)
+[Customer-Form](https://github.com/jimingeorge/ticket-master/blob/master/public/customer-form.png)
+[Employee](https://github.com/jimingeorge/ticket-master/blob/master/public/emp-list.png)
+[Department](https://github.com/jimingeorge/ticket-master/blob/master/public/dpt-list.png)
 
 ## `Dependencies and Installation`
 
