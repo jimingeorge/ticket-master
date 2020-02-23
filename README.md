@@ -2,7 +2,7 @@
 
 Ticket Master is a ticket management web application based on React. It allows the user to raise a ticket for customer and assign it to an employee within a department. 
 
-## `Images`
+## Images
 
 [Register](https://github.com/jimingeorge/ticket-master/blob/master/public/register.png)
 [Login](https://github.com/jimingeorge/ticket-master/blob/master/public/login.png)
@@ -13,7 +13,7 @@ Ticket Master is a ticket management web application based on React. It allows t
 [Employee](https://github.com/jimingeorge/ticket-master/blob/master/public/emp-list.png)
 [Department](https://github.com/jimingeorge/ticket-master/blob/master/public/dpt-list.png)
 
-## `Dependencies and Installation`
+## Dependencies and Installation
 
 1. react `create-react-app ticket-master`
 2. react-router-dom `npm install --save react-router-dom`
@@ -28,7 +28,7 @@ Ticket Master is a ticket management web application based on React. It allows t
 * Add and remove department.
 * Assign customer's ticket to listed department and to respective employees
 
-### `License`
+### License
 
 Copyright(c) 2020 
 
