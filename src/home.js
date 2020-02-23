@@ -42,8 +42,9 @@ function Home(props){
     //   })
 
     return(
-        <div>
-            <h1>Welcome to Ticket Master</h1>
+        <div >
+            <h1 style={{padding:'2%'}} className='text-center'>Welcome to Ticket Master</h1>
+            <hr/>
         <br/>
        
         </div>

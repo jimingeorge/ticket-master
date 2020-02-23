@@ -108,7 +108,7 @@ class Employees extends React.Component{
                         })}
                     </tbody>
                 </table>
-                <Link to='/employees/new'>Add Employees</Link>
+                <Link to='/employees/new'><button className='btn btn-sm btn-primary'>Add Employees</button></Link>
             </div>
         )
     }

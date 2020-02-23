@@ -95,7 +95,7 @@ class EmployeeForm extends React.Component {
               })}
             </select>
           </div>
-          <input type="submit" value="Add Employee" />
+          <button type="submit" className='btn btn-small btn-primary' value="Add Employee">Add Employee</button>
         </form>
       </div>
     );
